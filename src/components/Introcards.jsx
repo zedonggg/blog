@@ -26,8 +26,8 @@ export default function Introcards() {
                     <legend className="text-xl font-bold pl-6 pr-6" align="center">tech stack</legend>
                     <div className="p-3 pt-0 text-xl">
                         <p>i'm good at <span className="text-red-500">java</span>, <span className="text-blue-500">python</span>, 
-                        <span className="text-yellow-200"> javascript</span>/<span className="text-sky-500">typescript</span> and <span className="text-blue-300">postgresql</span><br></br><br></br>
-                        i'm getting good at <span className="text-indigo-400">c/c++</span> and <span className="text-fuchsia-400">r</span></p>
+                        <span className="text-yellow-200"> javascript</span>/<span className="text-sky-500">typescript</span> and <span className="text-blue-300">postgresql</span>.<br></br><br></br>
+                        i'm getting good at <span className="text-indigo-400">c/c++</span> and <span className="text-fuchsia-400">r</span>.</p>
                     </div>
                 </fieldset>
             </motion.div>
@@ -39,7 +39,9 @@ export default function Introcards() {
                 <fieldset className="rounded-lg border-2 border-gray-600">
                     <legend className="text-xl font-bold pl-6 pr-6" align="center">contact</legend>
                     <div className="p-3 pt-0 text-xl">
-                        <p>sunzedong@u.nus.edu</p>
+                        <p>drop me an email at <span className="text-amber-400">sunzedong@u.nus.edu</span><br></br><br></br>
+                        i'm also on <span className="text-blue-500">linkedin</span>, <span className="text-emerald-500">github </span>
+                         and <span className="text-pink-500">x dot com</span>.</p>
                     </div>
                 </fieldset>
             </motion.div>

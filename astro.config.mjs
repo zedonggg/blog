@@ -12,5 +12,4 @@ export default defineConfig({
 
   integrations: [react()],
   site: 'https://zedonggg.github.io',
-  base: 'blog',
 });
