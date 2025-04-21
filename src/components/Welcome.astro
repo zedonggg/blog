@@ -1,0 +1,29 @@
+---
+import "../styles/global.css"
+---
+
+<div id="container" class="flex flex-col md:flex-row">
+	<div class="mt-auto"><h1 class="text-left text-6xl h-auto" id="tweffect"></h1></div>
+	<div class="md:ml-auto mt-auto">
+		<ul class="flex flex-row">
+			<li class="font-bold text-violet-300 text-2xl"><a href="/">home</a></li>
+			<li class="pl-4 pr-4 font-bold text-violet-300 text-2xl"><a href="/">home</a></li>
+			<li class="font-bold text-violet-300 text-2xl"><a href="/">home</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>
+	const wordsFinished = "Hi! I'm Sun";
+	let i = 0;
+	function typewriter() {
+		if (i < wordsFinished.length) {
+			document.getElementById("tweffect").innerHTML += wordsFinished[i];
+			i++;
+			setTimeout(typewriter, 100);
+		}
+		console.log("test");
+	}
+	window.addEventListener("load", () => {typewriter()});
+</script>
+
