@@ -23,6 +23,26 @@ a:hover {
     text-decoration: none !important;
 }
 
+.timeline-box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.timeline-box.left::before {
+  right: -16px;
+  border-left: 8px solid #1f2937; /* tailwind bg-gray-800 */
+}
+
+.timeline-box.right::before {
+  left: -16px;
+  border-right: 8px solid #1f2937; /* tailwind bg-gray-800 */
+}
+
+
 @theme inline {
     --radius-sm: calc(var(--radius) - 4px);
     --radius-md: calc(var(--radius) - 2px);

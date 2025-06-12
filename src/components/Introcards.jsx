@@ -4,7 +4,9 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-  } from "@/components/ui/accordion"
+  } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+
   
 
 export default function Introcards() {
@@ -17,9 +19,9 @@ export default function Introcards() {
                 <fieldset className="rounded-lg border-2 border-gray-600">
                     <legend className="text-xl pl-6 pr-6 font-bold" align="center">about me</legend>
                     <div className="p-3 pt-0 text-xl">
-                        <p>i'm a cs & statistics undergrad at <span className="text-orange-500">NUS</span> focusing on distributed systems, parallel computing, and computational statistics.🤓<br></br><br></br>
-                        i'm currently interning at <span className="text-blue-600">CTC-Global</span>!<br></br><br></br>
-                        in my free time, i also like to cook, work out, listen to music, and do some muay thai.💪
+                        <p>i'm a cs & statistics undergrad at <span className="text-orange-500"><a href="https://www.comp.nus.edu.sg/">NUS</a></span> focusing on distributed systems, parallel computing, and computational statistics.🤓<br></br><br></br>
+                        i'm currently interning at <span className="text-blue-600"><a href="https://ctc-g.com.sg/">伊藤忠テクノソリューションズ</a></span>!<br></br><br></br>
+                        in my free time, i also like to cook, work out, listen to music, take pictures, and do some muay thai.💪
                         </p>
                     </div>
                 </fieldset>
@@ -59,13 +61,13 @@ export default function Introcards() {
                 <fieldset className="rounded-lg border-2 border-gray-600">
                     <legend className="text-xl font-bold pl-6 pr-6" align="center">contact me</legend>
                     <div className="p-3 pt-0 text-xl">
-                        <p>drop me an email at <span className="text-amber-400">sunzedong@u.nus.edu</span><br></br><br></br>
-                        i'm also on <span className="text-blue-500">linkedin</span>, <span className="text-emerald-500">github </span>
+                        <p>drop me an email at <span className="text-amber-400">sunzedong@u.nus.edu </span><Button size="sm" onClick={() => {navigator.clipboard.writeText("sunzedong@u.nus.edu")}}>copy</Button><br></br><br></br>
+                        i'm also on <span className="text-blue-500"><a href="https://www.linkedin.com/in/zedonggg/">linkedin</a></span>, <span className="text-emerald-500"><a href="https://github.com/zedonggg">github</a> </span>
                          and <span className="text-pink-500">x dot com</span>.</p>
                     </div>
                 </fieldset>
             </motion.div>
-            <motion.div 
+            {/* <motion.div 
                 initial={{ x: -100, opacity: 0}}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ ease: "easeOut", duration: 0.7, delay: 0.6}}
@@ -78,7 +80,7 @@ export default function Introcards() {
                          and <span className="text-pink-500">x dot com</span>.</p>
                     </div>
                 </fieldset>
-            </motion.div>
+            </motion.div> */}
         </div>
     )
 }
